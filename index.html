@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Docs Home</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- Sidebar -->
+<div class="sidebar" id="sidebar">
+    <h2>Docs Menu</h2>
+    <a href="#">Introduction</a>
+    <a href="#">Getting Started</a>
+    <a href="#">API Reference</a>
+    <a href="#">Examples</a>
+    <a href="#">FAQ</a>
+</div>
+
+<!-- Main -->
+<div class="main">
+    <!-- Header -->
+    <div class="header">
+        <span class="menu-toggle" onclick="toggleSidebar()">☰</span>
+
+        <div class="dropdown">
+            <button onclick="location.href='index.html'">Home ▼</button>
+            <div class="dropdown-content">
+                <a href="#">Profile</a>
+                <a href="#">Settings</a>
+                <a href="#">Logout</a>
+            </div>
+        </div>
+
+        <div class="dropdown">
+            <button>FICAM ▼</button>
+            <div class="dropdown-content">
+                <a href="ficam-architecture.html">FICAM Architecture</a>
+                <a href="#">Settings</a>
+                <a href="#">Logout</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Content -->
+    <div class="content">
+        <h2>Welcome to the Docs</h2>
+        <p>This is the home page. Use the FICAM dropdown to navigate to the FICAM Architecture page.</p>
+    </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
