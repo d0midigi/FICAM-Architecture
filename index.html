@@ -202,12 +202,12 @@
       </div>
     </li>
     <li class="nav-item" data-dropdown="2">
-      <a>Resources</a>
+      <a>FICAM Documentation</a>
       <div class="dropdown">
-        <a href="#" data-page="extras">UI Components</a>
-        <a href="#" data-page="extras">Code Snippets</a>
-        <a href="#" data-page="extras">Templates</a>
-        <a href="#" data-page="extras">Icons & Assets</a>
+        <a href="#" data-page="extras">NIST SP 800-63-3</a>
+        <a href="#" data-page="extras">NIST SP 800-63-4</a>
+        <a href="#" data-page="extras">NIST SP 800-63C</a>
+        <a href="#" data-page="extras">NIST SP 800-53 Rev. 5</a>
       </div>
     </li>
     <li class="nav-item" data-dropdown="3">
@@ -385,6 +385,82 @@ python3 -m http.server 8000</code></pre>
       </div>
     </section>
 
+<!-- COMPLIANCE MATRIX -->
+<section id="compliance-matrix" class="container my-5">
+  <h2 class="border-bottom pb-2">Complete Federal Compliance Matrix</h2>
+  <p class="lead">The Configurations in this repository are cross-referenced with the following National Institute of Standards and Technology (NIST) Special Publications (SPs):</p>
+
+  <div class="row row-cols-1 row-cols-md-2 g-4 mt-3">
+    <!-- FIPS 201-3 -->
+    <div class="col">
+      <div class="card h-100 shadow-sm">
+        <div class="card-body">
+          <h5 class="card-title text-primary">FIPS 201-3</h5>
+          <h6 class="card-subtitle mb-2 text-muted">Personal Identity Verification (PIV) of Federal Employees and Contractors</h6>
+          <p class="card-text">Governs the lifecycle, electrical interfaces, and cryptographic configurations of physical PIV/CAC tokens validated by Group Policy configurations.</p>
+        </div>
+      </div>
+    </div>
+
+<!-- SP 800-63 -->
+     <!-- SP 800-63 -->
+        <div class="col">
+            <div class="card h-100 shadow-sm">
+                <div class="card-body">
+                    <h5 class="card-title text-primary">NIST SP 800-63-4 Suite</h5>
+                    <h6 class="card-subtitle mb-2 text-muted">Digital Identity Guidelines</h6>
+                    <p class="card-text">Maps directly to digital identity enrollment standards (800-63A), multi-factor token configurations for AAL3 compliance (800-63B), and SAML/OIDC cross-agency identity assertions (800-63C).</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- SP 800-53 -->
+        <div class="col">
+            <div class="card h-100 shadow-sm">
+                <div class="card-body">
+                    <h5 class="card-title text-primary">NIST SP 800-53 Rev. 5</h5>
+                    <h6 class="card-subtitle mb-2 text-muted">Security and Privacy Controls for Information Systems</h6>
+                    <p class="card-text">Addresses specific <strong>IA (Identification & Authentication)</strong> and <strong>AC (Access Control)</strong> control sets. Enforced natively via GPO logic and validated via our compliance script.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- SP 800-78-4 -->
+        <div class="col">
+            <div class="card h-100 shadow-sm">
+                <div class="card-body">
+                    <h5 class="card-title text-primary">NIST SP 800-78-4</h5>
+                    <h6 class="card-subtitle mb-2 text-muted">Cryptographic Algorithms and Key Sizes for PIV</h6>
+                    <p class="card-text">Defines acceptable algorithm suites (RSA 2048+, ECC P-256+) required within Active Directory Certificate Services (ADCS) for secure smart card logons.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- SP 800-157 -->
+        <div class="col">
+            <div class="card h-100 shadow-sm">
+                <div class="card-body">
+                    <h5 class="card-title text-primary">NIST SP 800-157</h5>
+                    <h6 class="card-subtitle mb-2 text-muted">Guidelines for Derived PIV Credentials</h6>
+                    <p class="card-text">Provides architectural validation rules for authenticating hardware security tokens (like YubiKeys or mobile devices) interacting with Entra ID or AD DS.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- SP 1800-25 -->
+        <div class="col">
+            <div class="card h-100 shadow-sm">
+                <div class="card-body">
+                    <h5 class="card-title text-primary">NIST SP 1800-25</h5>
+                    <h6 class="card-subtitle mb-2 text-muted">Data Integrity: Identity, Credential, and Access Management</h6>
+                    <p class="card-text">Guides the implementation of centralized logging, tracking anomalous account configurations, and behavioral audatability inside hybrid networks.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+    
     <!-- EXTRAS PAGE -->
     <section class="page-section" id="page-extras">
       <span class="badge">Components</span>
