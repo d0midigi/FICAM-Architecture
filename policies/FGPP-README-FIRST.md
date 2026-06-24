@@ -1,0 +1,1 @@
+This template defines a highly secure Password Settings Object (PSO) using Active Directory's Fine-Grained Password Policy framework. It is explicitly designed for administrative, service, or emergency "break-glass" accounts that cannot naturally enforce a PIV/CAC smart card login. It aligns with the manual authentication fallback baselines of NIST SP 800-53 Rev. 5 (IA-5).
